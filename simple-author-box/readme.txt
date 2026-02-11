@@ -3,7 +3,7 @@ Contributors: WebFactory
 Tags: author box, author profile, author social icons, author bio, guest author
 Requires at least: 4.6
 Requires PHP: 5.6
-Tested up to: 6.8
+Tested up to: 6.9
 Stable tag: 2.59
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
