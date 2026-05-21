@@ -322,7 +322,10 @@ class Simple_Author_Box
     public function settings_link($links)
     {
         if (is_array($links)) {
-            $sab = sprintf('<a href="%s">%s</a>', admin_url('themes.php?page=simple-author-box'), __('Configure Author Box', 'simple-author-box'));
+            $sab = sprintf('<a href="%s">%s</a>', admin_url('themes.php?page=simple-author-box'), __('Configure', 'simple-author-box'));
+            $buy = sprintf('<a href="%s"><b>%s</b></a>', admin_url('themes.php?page=simple-author-box#get-pro'), __('Get PRO', 'simple-author-box'));
+
+            array_unshift($links, $buy);
             array_unshift($links, $sab);
         }
 

@@ -325,9 +325,17 @@
     closeOnEscape: true,
   });
 
-  if (window.localStorage.getItem('sab_upsell_shown') != 'true') {
+  // show upsell popup every 3 months
+  if (window.localStorage.getItem('sab_upsell_timestamp') === null ||
+      (new Date().getTime() / 1000 - window.localStorage.getItem('sab_upsell_timestamp')) > (86400 * 90)) {
+    window.localStorage.setItem('sab_upsell_timestamp', Math.round(new Date().getTime() / 1000));
+
     open_upsell('welcome');
-    window.localStorage.setItem('sab_upsell_shown', 'true');
+  }
+
+  if (location.hash == '#get-pro') {
+    location.hash = '';
+    open_upsell('sab-plugins-table');
   }
 
   $('.sab-saved').delay(10000).fadeOut(300);

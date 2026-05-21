@@ -1002,11 +1002,11 @@ class Simple_Author_Box_Admin_Page
       $out .= '</tr>';
 
       $out .= '<tr>';
-      $out .= '<td><a class="button button-buy" data-href-org="https://wpauthorbox.com/buy/?product=personal-lifetime&ref=pricing-table" href="https://wpauthorbox.com/buy/?product=personal-lifetime&ref=pricing-table" target="_blank">lifetime license<br>$59 - BUY NOW</a>
+      $out .= '<td><a class="button button-buy" data-href-org="https://wpauthorbox.com/buy/?product=personal-lifetime&ref=pricing-table" href="https://wpauthorbox.com/buy/?product=personal-lifetime&ref=pricing-table" target="_blank">Lifetime license<br>$59 - BUY NOW</a>
       <br>- or -<br>
       <a class="button-buy" data-href-org="https://wpauthorbox.com/buy/?product=personal-yearly&ref=pricing-table" href="https://wpauthorbox.com/buy/?product=personal-yearly&ref=pricing-table" target="_blank">$39 <small>/year</small></a></td>';
-      $out .= '<td><a class="button button-buy" data-href-org="https://wpauthorbox.com/buy/?product=team-lifetime&ref=pricing-table" href="https://wpauthorbox.com/buy/?product=team-lifetime&ref=pricing-table" target="_blank">lifetime license<br>$69 - BUY NOW</a></td>';
-      $out .= '<td><a class="button button-buy" data-href-org="https://wpauthorbox.com/buy/?product=agency-launch&ref=pricing-table" href="https://wpauthorbox.com/buy/?product=agency-launch&ref=pricing-table" target="_blank">lifetime license<br>$99 - BUY NOW</a></td>';
+      $out .= '<td><a class="button button-buy" data-href-org="https://wpauthorbox.com/buy/?product=team-lifetime&ref=pricing-table" href="https://wpauthorbox.com/buy/?product=team-lifetime&ref=pricing-table" target="_blank">Lifetime license<br>$69 - BUY NOW</a></td>';
+      $out .= '<td><a class="button button-buy" data-href-org="https://wpauthorbox.com/buy/?product=agency-launch&ref=pricing-table" href="https://wpauthorbox.com/buy/?product=agency-launch&ref=pricing-table" target="_blank">Lifetime license<br>$99 - BUY NOW</a></td>';
       $out .= '</tr>';
 
       $out .= '</table>';
@@ -1076,10 +1076,10 @@ class Simple_Author_Box_Admin_Page
             } else {
                 $settings = array();
             }
-            
+
             $groups   = array();
 
-            
+
             foreach ($this->settings as $tab => $setting_fields) {
                 foreach ($setting_fields as $key => $setting) {
                     if (isset($setting['group'])) {
