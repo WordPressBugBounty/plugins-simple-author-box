@@ -300,7 +300,7 @@
 
     $('#sab-pro-dialog').dialog('open');
 
-    $('#sab-pro-table .button-buy').each(function(ind, el) {
+    $('#sab-pro-dialog .button-buy').each(function(ind, el) {
       tmp = $(el).data('href-org');
       tmp = tmp.replace('pricing-table', feature);
       $(el).attr('href', tmp);
